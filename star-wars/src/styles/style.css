@@ -1,0 +1,28 @@
+.glava {  
+  height: 100%;
+  padding: 60px;
+  text-align: right;
+  background: #000000;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: left;
+}
+
+.titl { height: 100%;
+  padding: 50px;
+  color: white;
+  font-size: 50px;
+  
+}
+
+.imagee {
+    height:30%;
+    width: 15%;
+    margin-left: 5%;
+    margin-right: 5%;   
+}
+
+.button {
+  margin:auto;
+}
