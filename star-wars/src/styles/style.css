@@ -1,3 +1,13 @@
+.table-width table{
+  border-collapse: collapse;
+  width:100%;
+}
+
+.table-text th {
+  text-align: left;
+  width:10%;   
+}
+
 .glava {  
   height: 100%;
   padding: 60px;

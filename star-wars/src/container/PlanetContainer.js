@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/style.css'
 import {connect} from 'react-redux'
-import { fetchPlanets } from "../actions/Actions";
-import DisplayConent from '../components/DisplayContent'
-import SearchBar from '../components/SearchBar'
+import { fetchPlanets } from '../actions/Actions';
+import PlanetListItem from '../components/PlanetListItem'
+import SearchBar from '../components/NavBar'
 
 class PlanetInfo extends React.Component {
     constructor() {
@@ -13,23 +13,16 @@ class PlanetInfo extends React.Component {
         }
     this.handleClick = this.handleClick.bind(this)
     this.handleChange = this.handleChange.bind(this)
-    //this.fetchPlanetList = this.fetchPlanetList.bind(this)
     }
 
     componentDidMount() {
         this.props.fetchPlanetListData('page=1')
     }
-    
-    componentDidUpdate(prevState){
-        this.setState()
-        }
 
     render() {
         const planetData= this.props.planetsData
-        const planetList= planetData.results ? planetData.results.map(planet => <DisplayConent  key={planet.url} planet={planet} />)  : "loading..."
+        const planetList= planetData.results ? planetData.results.map(planet => <PlanetListItem  key={planet.url} planet={planet} />)  : 'loading...'
         const searchURL = 'https://swapi.co/api/planets/?search=' + this.state.searchName
-        // console.log(planetData.next,'3')
-        // console.log(this.props.planetsData.next,'4')
         return (
         <div>
             <SearchBar 
@@ -48,7 +41,7 @@ class PlanetInfo extends React.Component {
     }
 
     handleClick(url){
-        const queryString = url.split("?").pop() // cuts the string at ? beacuse it already hold baseURL in it
+        const queryString = url.split('?').pop() // cuts the string at ? beacuse it already hold baseURL in it
         this.props.fetchPlanetListData(queryString)
     }
 
@@ -58,15 +51,6 @@ class PlanetInfo extends React.Component {
             [name]: value
         })
     }
-
-    // fetchPlanetList(url){
-    //     fetch(url)
-    //         .then(response => response.json())
-    //         .then(data =>  this.setState({
-    //             planetsData: data
-    //             })
-    //         )
-    //}
 }
 
 const mapStateToProps = state => {
