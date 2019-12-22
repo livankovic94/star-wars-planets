@@ -1,14 +1,14 @@
-.table-width table{
+.table-width table {
   border-collapse: collapse;
-  width:100%;
+  width: 100%;
 }
 
 .table-text th {
   text-align: left;
-  width:10%;   
+  width: 10%;
 }
 
-.glava {  
+.header__view {
   height: 100%;
   padding: 60px;
   text-align: right;
@@ -19,20 +19,20 @@
   align-items: left;
 }
 
-.titl { height: 100%;
+.title {
+  height: 100%;
   padding: 50px;
   color: white;
   font-size: 50px;
-  
 }
 
-.imagee {
-    height:30%;
-    width: 15%;
-    margin-left: 5%;
-    margin-right: 5%;   
+.header__image {
+  height: 30%;
+  width: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .button {
-  margin:auto;
+  margin: auto;
 }

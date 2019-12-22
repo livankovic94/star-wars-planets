@@ -1,16 +1,15 @@
-import React from 'react';
-import Header from './components/HeaderView.js'
-import PlanetInfo from './container/PlanetContainer.js'
+import React from "react";
+import HeaderView from "./components/HeaderView.js";
+import PlanetInfo from "./container/PlanetContainer.js";
 
 class App extends React.Component {
- 
-  render(){
-    return(
-    <div >
-      <Header />
-      <PlanetInfo />
-    </div>
-    )
+  render() {
+    return (
+      <div>
+        <HeaderView />
+        <PlanetInfo />
+      </div>
+    );
   }
 }
 
