@@ -17,7 +17,7 @@ function PlanetListItem(props) {
           <tr>
             <td>{props.planet.name}</td>
             <td>{props.planet.climate}</td>
-            <td>{props.planet.diameter}</td>
+            <td>{props.planet.diameter} km</td>
             <td>{props.planet.gravity}</td>
           </tr>
         </tbody>
