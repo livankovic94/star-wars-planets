@@ -9,7 +9,7 @@ function HeaderView() {
         className="header__image"
         src="https://images-na.ssl-images-amazon.com/images/I/41wa5VvUboL._SX355_.jpg"
       />
-      <span className="header__title">StarWars Planterium</span>
+      <span className="header__title">Star Wars Planterium</span>
     </div>
   );
 }
