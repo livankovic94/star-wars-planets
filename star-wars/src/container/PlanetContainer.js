@@ -23,8 +23,8 @@ class PlanetInfo extends React.Component {
     const planetData = this.props.planetsData;
     const planetList = planetData.results
       ? planetData.results.map(planet => (
-          <PlanetListItem key={planet.url} planet={planet} />
-        ))
+        <PlanetListItem key={planet.url} planet={planet} />
+      ))
       : "loading...";
     const searchURL =
       "https://swapi.co/api/planets/?search=" + this.state.searchName;
