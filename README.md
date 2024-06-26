@@ -11,7 +11,7 @@ Quick setup
 
 Clone into master https://github.com/livankovic94/star-wars-planets.git
 
-Open command prompt and follow steps below
+Open command prompt and follow steps below !
 
 - cd /path/to/folder
 
